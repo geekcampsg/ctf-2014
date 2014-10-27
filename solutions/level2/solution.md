@@ -27,10 +27,10 @@ System info: Linux ctf.geekcamp.sg 3.16.4-1-ARCH #1 SMP PREEMPT Mon Oct 6 08:22:
 
 ---
 
-Running `strings` on the binary reveals that it does indeed have a string with `uname -a` in it.
+Running `strings -a` on the binary reveals that it does indeed have a string with `uname -a` in it.
 
 ```shell
-> strings $(which level2)
+> strings -a $(which level2)
 ```
 
 ```
@@ -49,7 +49,9 @@ AUATL
 []A\A]A^A_
 System info: 
 uname -a
-;*3$"
+.
+.
+.
 ```
 
 ---
